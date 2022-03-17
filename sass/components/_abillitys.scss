@@ -28,10 +28,16 @@
     }
   }
 
+  &__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   // .abillitys__title
 
   &__title {
-    margin-bottom: 32px;
+    // margin-bottom: 32px;
     font-family: "Druk Wide Medium";
     font-style: normal;
     font-weight: 500;
@@ -44,7 +50,7 @@
   // .abillitys__subtitle
 
   &__subtitle {
-    margin-bottom: 32px;
+    // margin-bottom: 32px;
     font-family: "Druk Wide Medium";
     font-style: normal;
     font-weight: 500;

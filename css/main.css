@@ -262,8 +262,6 @@ img {
   height: 990px;
   background-color: #1f2326;
   background: linear-gradient(135deg, transparent 15px, #1f2326 0) top left;
-  -webkit-transition: 0.5s all ease;
-  transition: 0.5s all ease;
 }
 
 .card__item:hover .thumb {
@@ -334,8 +332,20 @@ img {
   width: 219px;
 }
 
+.abillitys__text-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .abillitys__title {
-  margin-bottom: 32px;
   font-family: "Druk Wide Medium";
   font-style: normal;
   font-weight: 500;
@@ -345,7 +355,6 @@ img {
 }
 
 .abillitys__subtitle {
-  margin-bottom: 32px;
   font-family: "Druk Wide Medium";
   font-style: normal;
   font-weight: 500;
