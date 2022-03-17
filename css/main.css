@@ -43,6 +43,12 @@ img {
   height: auto;
 }
 
+@font-face {
+  font-family: "Druk Wide Medium";
+  src: url("//db.onlinewebfonts.com/t/7e389c5e310dc537b083e0e25ea6eab5.eot");
+  src: url("//db.onlinewebfonts.com/t/7e389c5e310dc537b083e0e25ea6eab5.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/7e389c5e310dc537b083e0e25ea6eab5.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/7e389c5e310dc537b083e0e25ea6eab5.woff") format("woff"), url("//db.onlinewebfonts.com/t/7e389c5e310dc537b083e0e25ea6eab5.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/7e389c5e310dc537b083e0e25ea6eab5.svg#Druk Wide Medium") format("svg");
+}
+
 .background {
   display: -ms-grid;
   display: grid;
@@ -143,6 +149,8 @@ img {
 }
 
 .nav-bar__link {
+  display: block;
+  padding: 57px 0;
   text-decoration: none;
   height: 100%;
   font-family: "Montserrat";
