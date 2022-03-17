@@ -261,14 +261,15 @@ img {
   width: 440px;
   height: 990px;
   background-color: #1f2326;
+  background: linear-gradient(135deg, transparent 15px, #1f2326 0) top left;
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
-  border-top-left-radius: 15px;
 }
 
 .card__item:hover .thumb {
   background-color: #ffffff;
-  outline: 2px solid #1f2326;
+  background: linear-gradient(135deg, transparent 15px, #ffffff 0) top left;
+  border: 2px solid #1f2326;
 }
 
 .img {
@@ -308,7 +309,7 @@ img {
 .abillitys__list {
   position: absolute;
   bottom: 0;
-  left: -150px;
+  left: -120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -325,8 +326,8 @@ img {
   height: 248px;
   padding: 31px 58px;
   background-color: #fff;
-  outline: 2px solid #000000;
-  border-top-left-radius: 15px;
+  border: 2px solid #000000;
+  background: linear-gradient(135deg, transparent 15px, #ffffff 0) top left;
 }
 
 .abillitys__item:last-child {

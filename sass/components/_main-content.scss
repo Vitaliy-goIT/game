@@ -191,14 +191,14 @@
   width: 440px;
   height: 990px;
   background-color: #1f2326;
-  // background: linear-gradient(135deg, transparent 15px, #1f2326 0) top left;
+  background: linear-gradient(135deg, transparent 15px, #1f2326 0) top left;
   transition: 0.5s all ease;
   // clip-path: polygon(15px 0%, 100% 0%, 100% 100%, 0% 100%);
-  border-top-left-radius: 15px;
+  // border-top-left-radius: 15px;
   .card__item:hover & {
     background-color: #ffffff;
-    // background: linear-gradient(135deg, transparent 15px, #ffffff 0) top left;
-    outline: 2px solid #1f2326;
+    background: linear-gradient(135deg, transparent 15px, #ffffff 0) top left;
+    border: 2px solid #1f2326;
   }
 }
 
