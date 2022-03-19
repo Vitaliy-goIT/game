@@ -136,6 +136,8 @@
     display: flex;
     gap: 145px;
     height: 990px;
+    width: 1750px;
+    justify-content: space-between;
   }
 
   // .card__item
@@ -152,6 +154,7 @@
   left: 82px;
   transform-origin: top left;
   transform: rotate(90deg);
+  z-index: 300;
 }
 
 .country {
@@ -186,23 +189,44 @@
 }
 
 .thumb {
-  // position: absolute;
+  position: absolute;
   display: block;
   width: 440px;
   height: 990px;
   background-color: #1f2326;
-  background: linear-gradient(135deg, transparent 15px, #1f2326 0) top left;
+  clip-path: polygon(20px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 20px);
+  // background: linear-gradient(135deg, transparent 15px, #1f2326 0) top left;
+  transition: 0.5s all ease;
 
   .card__item:hover & {
     background-color: #ffffff;
-    background: linear-gradient(135deg, transparent 15px, #ffffff 0) top left;
+    // background: linear-gradient(135deg, transparent 15px, #ffffff 0) top left;
     border: 2px solid #1f2326;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: -4px;
+    width: 4px;
+    height: 28px;
+    border-radius: 1px;
+    background-color: #1f2326;
+    transform-origin: left bottom;
+    transform: rotate(45deg);
+    opacity: 0;
+
+    .card__item:hover & {
+      opacity: 1;
+    }
   }
 }
 
 .img {
   height: 100%;
 }
+
 .skills {
   position: absolute;
   left: 31px;
